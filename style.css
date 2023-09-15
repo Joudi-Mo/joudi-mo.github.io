@@ -1,0 +1,21 @@
+body{
+    background-color: beige;
+    margin: 30px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+header a{
+    padding: 10px;
+}
+article{
+    width: 50%;
+}
+aside{
+    /* background-color: aqua; */
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
