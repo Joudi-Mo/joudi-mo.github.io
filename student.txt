@@ -1,0 +1,5 @@
+Student name: Joudi Mohamad
+Student number: 714313
+Student class: INF1c
+GitHub Repository: https://github.com/Joudi-Mo/joudi-mo.github.io
+GitHub Pages URL: https://joudi-mo.github.io/
