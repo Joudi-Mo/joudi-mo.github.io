@@ -648,7 +648,11 @@ textarea {
     }
 }
 @media only screen and (min-width: 768px) {
-    #sidemenu{
+    #sidemenu {
         display: none;
     }
+}
+
+.notvalid {
+    display: none;
 }
