@@ -6,7 +6,7 @@
         <meta name="description" content="Web markup assignment :D" />
         <meta name="author" content="Joudi" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png" />
 
         <!-- Font awesome (icons) -->
         <script src="https://kit.fontawesome.com/5170057f53.js" crossorigin="anonymous"></script>
@@ -24,7 +24,23 @@
                 <li><a href="galerij.html">Galerij</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <i id="toggle" class="fa-solid fa-bars" onclick="myFunction()"></i>
         </nav>
+        <section id="sidemenu" class="sidemenuactive">
+            <ul>
+                <li><a href="winkels.html" alt="logo">Winkels</a></li>
+                <li><a href="evenementen.html" alt="Evenementen">Evenementen</a></li>
+                <li><a href="about.html" alt="Over ons">Over ons</a></li>
+                <li><a href="galerij.html" alt="Galerij">Galerij</a></li>
+                <li><a href="contact.html" alt="Contact">Contact</a></li>
+            </ul>
+
+            <span id="socials2">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </span>
+        </section>
 
         <!-- Evenementen -->
         <main id="evenementen">
@@ -67,16 +83,17 @@
                     dranken bij onze foodtrucks.
                 </p>
                 <p class="alinea">
-                    <span>Goede Doelen Actie:</span> Laten we <strong>samen</strong> de geest van vrijgevigheid
-                    delen. Doneer aan onze kerstactie en steun lokale goede doelen die zich inzetten
-                    voor de gemeenschap. Kom met uw familie en vrienden en deel de warmte en
-                    gezelligheid van Kerstmis met ons. We hopen dat deze betoverende avond uw
-                    vakantieseizoen op een onvergetelijke manier zal verlichten.
+                    <span>Goede Doelen Actie:</span> Laten we <strong>samen</strong> de geest van
+                    vrijgevigheid delen. Doneer aan onze kerstactie en steun lokale goede doelen die
+                    zich inzetten voor de gemeenschap. Kom met uw familie en vrienden en deel de
+                    warmte en gezelligheid van Kerstmis met ons. We hopen dat deze betoverende avond
+                    uw vakantieseizoen op een onvergetelijke manier zal verlichten.
                 </p>
                 <p class="alinea">
                     Vier Kerstmis met ons bij het Schalkwijk Winkelcentrum en maak deel uit van deze
-                    prachtige traditie. <strong id="special2">Samen</strong> creëren we herinneringen die een leven lang meegaan.
-                    Tot ziens op 17 december voor een onvergetelijke avond vol kerstvreugde!
+                    prachtige traditie. <strong id="special2">Samen</strong> creëren we
+                    herinneringen die een leven lang meegaan. Tot ziens op 17 december voor een
+                    onvergetelijke avond vol kerstvreugde!
                 </p>
             </article>
         </main>
@@ -91,5 +108,7 @@
                 <i class="fa-brands fa-youtube"></i>
             </span>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>

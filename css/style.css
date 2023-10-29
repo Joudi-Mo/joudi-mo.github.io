@@ -20,8 +20,8 @@ img {
 nav {
     position: fixed;
     position: static;
-    padding: 1em 4.5em;
-    border-bottom: 0.13em solid black;
+    padding: 1em 7.5em;
+    border-bottom: 0.13em solid #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    color: black;
+    color: #000;
     text-decoration: none;
     margin-right: 1.7em;
     font-size: 1.4em;
@@ -48,7 +48,7 @@ nav > ul > li > a:hover {
 #hero {
     display: flex;
     min-height: 34.5em;
-    border-bottom: 0.13em solid black;
+    border-bottom: 0.13em solid #000;
 }
 #icon1 {
     float: left;
@@ -58,6 +58,7 @@ nav > ul > li > a:hover {
     transform: rotate(-30deg);
     color: #745420;
     font-size: 2.5em;
+    z-index: 9;
 }
 #icon2 {
     float: right;
@@ -66,6 +67,7 @@ nav > ul > li > a:hover {
     transform: rotate(30deg);
     color: #3085c3;
     font-size: 2.5em;
+    z-index: 9;
 }
 .column {
     width: 50%;
@@ -89,7 +91,7 @@ nav > ul > li > a:hover {
     font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #000;
     background-color: #7ee081;
     padding: 0.7em 1em;
     border-radius: 0.6em;
@@ -155,7 +157,7 @@ nav > ul > li > a:hover {
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #000;
     background-color: #7ee081;
     padding: 0.8em 1em;
     border-radius: 0.5em;
@@ -175,7 +177,7 @@ footer {
     align-items: center;
     padding: 1.1em 4.5em;
     border-style: solid;
-    border-color: black;
+    border-color: #000;
     border-width: 0.13em;
 }
 
@@ -405,7 +407,7 @@ fieldset {
 
 input[type="radio"] {
     margin-right: 0.8em;
-    color: black;
+    color: #000;
 }
 
 #vrouw {
@@ -447,4 +449,201 @@ textarea {
     width: 70vw;
     margin: 2.7em 0;
     border-radius: 1em;
+}
+
+#toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 66;
+}
+
+#sidemenu {
+    z-index: 55;
+    /* display: none; */
+    background-color: #f9a826;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 7em;
+}
+#sidemenu > ul {
+    padding: 8em 12em;
+    list-style: none;
+}
+#sidemenu > ul > li {
+    padding: 1.3em;
+}
+#sidemenu > ul > li > a {
+    font-size: 1.8em;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#socials2 {
+    border-top: 0.05em #000 solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4em;
+    color: #000;
+    padding-top: 0.5em;
+}
+
+.sidemenuInActive{
+    display: none;
+}
+.sidemenuactive{
+    display: block;
+}
+
+/* Media Queries / Responsive design*/
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+    nav {
+        padding: 1em 3.5em;
+        font-size: 0.8em;
+    }
+    nav ul {
+        display: none;
+    }
+    nav a img {
+        width: 12em;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    /* Hero section */
+    #hero {
+        min-height: 22em;
+    }
+    #icon1 {
+        left: 14em;
+    }
+    #icon2 {
+        float: right;
+        position: relative;
+        top: -2em;
+        transform: rotate(30deg);
+        color: #3085c3;
+        font-size: 2.5em;
+    }
+
+    #column1 {
+        padding: 3em 5em 3em 3em;
+        width: 100%;
+    }
+
+    #column1 > h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    #column1 > p {
+        font-size: 1.2em;
+        margin-bottom: 2.7em;
+    }
+
+    #column1 > a {
+        font-size: 1.1em;
+    }
+
+    #column1 > a:hover {
+        font-size: 1.15em;
+    }
+
+    #column2 {
+        display: none;
+    }
+
+    /* 2e section */
+    #section2 {
+        display: flex;
+        min-height: 7em;
+        padding: 4.5em 5em 4.5em 4.5em;
+    }
+
+    #s2column1 {
+        display: none;
+    }
+
+    #s2column2 {
+        width: 100%;
+    }
+
+    #s2column2 > h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    #s2column2 > p {
+        font-size: 1.2em;
+        margin-bottom: 2.7em;
+    }
+
+    #s2column2 > a {
+        font-size: 1.1em;
+    }
+
+    #s2column2 > a:hover {
+        font-size: 1.15em;
+    }
+
+    /* footer */
+    footer {
+        padding: 1em 7.5em;
+        padding: 1em 1.5em;
+        border-style: solid;
+        border-color: #000;
+        border-width: 0.13em;
+    }
+
+    footer > a > img {
+        width: 8em;
+    }
+
+    #copyright {
+        font-size: 1.1em;
+    }
+
+    #socials {
+        display: none;
+    }
+
+    /* Winkels */
+    #winkels {
+        padding: 0 2.5em;
+    }
+
+    .pagedesc {
+        margin: 1em 0;
+        font-size: 1.6em;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em 0;
+        border-radius: 0 1em 1em 0;
+    }
+
+    .shopthumbnail {
+        width: 12.5em;
+    }
+
+    .winkeltext {
+        width: 40%;
+    }
+    .winkeltext > span {
+        font-size: 1.2em;
+    }
+
+    .winkeltext > p,
+    .winkeltext > a {
+        margin: 1em 3em;
+    }
 }
