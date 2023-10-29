@@ -246,8 +246,12 @@ footer > a > img {
     margin: 1em 3em;
 }
 
-.winkeltext > a {
+.winkeltext > a:link {
     color: #3085c3;
+}
+
+.winkeltext > a:visited {
+    color: #745420;
 }
 
 .winkeltext > a:hover {
@@ -256,10 +260,6 @@ footer > a > img {
 }
 
 .winkeltext > a:active {
-    color: #745420;
-}
-
-.winkeltext > a:visited {
     color: #745420;
 }
 
