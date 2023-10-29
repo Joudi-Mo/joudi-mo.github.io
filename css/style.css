@@ -490,13 +490,6 @@ textarea {
     padding-top: 0.5em;
 }
 
-.sidemenuInActive{
-    display: none;
-}
-.sidemenuactive{
-    display: block;
-}
-
 /* Media Queries / Responsive design*/
 @media only screen and (max-width: 768px) {
     body {
@@ -514,6 +507,13 @@ textarea {
     }
 
     #toggle {
+        display: block;
+    }
+
+    .sidemenuInActive {
+        display: none;
+    }
+    .sidemenuactive {
         display: block;
     }
 
@@ -645,5 +645,10 @@ textarea {
     .winkeltext > p,
     .winkeltext > a {
         margin: 1em 3em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #sidemenu{
+        display: none;
     }
 }
